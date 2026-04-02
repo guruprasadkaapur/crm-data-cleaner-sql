@@ -30,7 +30,7 @@ This project focuses on cleaning, validating, and analyzing institutional data u
 - Gender-wise performance
 - Impact of preparation course
 
-- ## 🧠 Key SQL Queries
+- ## The following SQL queries were used to derive business insights from the dataset
 
 ### Total Students
 SELECT COUNT(*) FROM students_final;
