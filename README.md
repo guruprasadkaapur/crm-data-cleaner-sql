@@ -30,6 +30,35 @@ This project focuses on cleaning, validating, and analyzing institutional data u
 - Gender-wise performance
 - Impact of preparation course
 
+- ## 🧠 Key SQL Queries
+
+### Total Students
+SELECT COUNT(*) FROM students_final;
+
+### Average Score
+SELECT AVG(avg_score) FROM students_final;
+
+### Pass vs Fail
+SELECT pass_fail, COUNT(*) 
+FROM students_final
+GROUP BY pass_fail;
+
+### Top Performers
+SELECT total_score
+FROM students_final
+ORDER BY total_score DESC
+LIMIT 10;
+
+### Performance by Gender
+SELECT gender, AVG(avg_score)
+FROM students_final
+GROUP BY gender;
+
+### Impact of Preparation Course
+SELECT prep_course, AVG(avg_score)
+FROM students_final
+GROUP BY prep_course;
+
 ---
 
 ## 📈 Key Insights
